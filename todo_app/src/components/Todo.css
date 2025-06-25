@@ -1,0 +1,15 @@
+/* Todo.css */
+
+.todoContainer {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    /* <-- Helps push footer down when inside a flex layout */
+    display: flex;
+    flex-direction: column;
+}

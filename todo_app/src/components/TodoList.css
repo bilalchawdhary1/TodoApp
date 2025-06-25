@@ -1,0 +1,28 @@
+/* TodoList.css */
+
+.todoListContainer {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.totalCount {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+}

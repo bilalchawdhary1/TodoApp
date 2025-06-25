@@ -1,0 +1,30 @@
+/* App.css */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    /* Pushes footer to bottom */
+    padding: 1rem 0;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    border-top: 1px solid #e5e7eb;
+}
