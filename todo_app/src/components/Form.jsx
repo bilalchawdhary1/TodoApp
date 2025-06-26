@@ -13,7 +13,13 @@ export const Form = ({setTodos, todos}) => {
       return;
     }
 
-    setTodos([...todos, todo]);
+    const newTodo = {
+      id: Date.now(), // unique ID
+      text: todo, // the input text
+      done: false, // default status
+    };
+
+    setTodos([...todos, newTodo]);
     setTodo("");
     setError("");
   };

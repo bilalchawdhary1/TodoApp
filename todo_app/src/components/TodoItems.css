@@ -1,15 +1,25 @@
-/* TodoItems.css */
-
-.todoItemContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .todoItemText {
     font-size: 1rem;
     color: #1f2937;
     word-break: break-word;
+    transition: 0.2s;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.todoItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .deleteBtn {

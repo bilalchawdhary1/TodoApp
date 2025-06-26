@@ -2,18 +2,25 @@ import {TodoItems} from "./TodoItems";
 import "./TodoList.css";
 
 export const TodoList = ({todos, setTodos}) => {
-  const handleDelete = indexToDelete => {
-    setTodos(todos.filter((_, index) => index !== indexToDelete)); // Explanation: This filters out the todo item at the specified index.
+  const handleDelete = id => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+
+  const handleToggle = id => {
+    setTodos(
+      todos.map(todo => (todo.id === id ? {...todo, done: !todo.done} : todo))
+    );
   };
 
   return (
     <div className='todoListContainer'>
       <ul>
-        {todos.map((todoitem, index) => (
-          <li key={index}>
+        {todos.map(todoitem => (
+          <li key={todoitem.id}>
             <TodoItems
               todoitem={todoitem}
-              onDelete={() => handleDelete(index)}
+              onDelete={handleDelete}
+              onToggle={handleToggle}
             />
           </li>
         ))}
